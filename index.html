@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs='sourceType: webcam;'>
+
+    <a-assets>
+        <a-asset-item id="model" src="https://ucarecdn.com/7a87e80c-47c2-46a1-a8f6-65dde2d1975a/"></a-asset-item>
+    </a-assets>
+
+    <a-entity collada-model="#model" position="0 0.5 0" scale="0.2 0.2 0.2"></a-entity>
+
+
+    <a-marker-camera preset='hiro'></a-marker-camera>
+</a-scene>
+
+</body>
+</html>
